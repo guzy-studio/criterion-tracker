@@ -1,0 +1,82 @@
+.notes-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  opacity: 0;
+  transition: opacity var(--duration) var(--ease);
+}
+
+.notes-backdrop.visible {
+  opacity: 1;
+}
+
+.notes-modal {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border-radius: 12px;
+  padding: 32px;
+  width: 90%;
+  max-width: 480px;
+  transform: scale(0.96);
+  transition: transform var(--duration) var(--ease);
+}
+
+.notes-backdrop.visible .notes-modal {
+  transform: scale(1);
+}
+
+.notes-modal-header {
+  margin-bottom: 20px;
+}
+
+.notes-modal-title {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.notes-modal-subtitle {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.notes-modal textarea {
+  width: 100%;
+  min-height: 120px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--glass-border);
+  color: var(--text);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  resize: vertical;
+  outline: none;
+  padding: 8px 0;
+}
+
+.notes-modal textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.notes-modal-close {
+  display: block;
+  margin-top: 16px;
+  margin-left: auto;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  transition: color var(--duration) var(--ease);
+}
+
+.notes-modal-close:hover {
+  color: var(--text);
+}

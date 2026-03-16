@@ -1,0 +1,22 @@
+.stats-bar {
+  display: flex;
+  gap: 32px;
+  padding: 0 40px 24px;
+}
+
+.stats-bar span {
+  font-size: 0.6875rem;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.stats-bar .stat-value {
+  color: var(--text);
+}
+
+@media (max-width: 600px) {
+  .stats-bar {
+    padding: 0 20px 16px;
+    gap: 20px;
+  }
+}

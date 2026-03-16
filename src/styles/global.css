@@ -1,0 +1,19 @@
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  text-transform: uppercase;
+  opacity: 0;
+  animation: fadeIn 280ms ease forwards;
+  transition: background var(--duration) var(--ease), color var(--duration) var(--ease);
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+::selection {
+  background: var(--accent);
+  color: #ffffff;
+}
+

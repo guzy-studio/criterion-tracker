@@ -1,0 +1,14 @@
+.theme-toggle {
+  font-size: 0.625rem;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  transition: color var(--duration) var(--ease), background var(--duration) var(--ease);
+}
+
+.theme-toggle:hover {
+  color: var(--text);
+}

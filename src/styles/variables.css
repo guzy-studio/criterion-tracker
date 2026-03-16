@@ -1,0 +1,36 @@
+:root {
+  --bg: #0a0a0a;
+  --text: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.5);
+  --accent: #4a9e6e;
+
+  --glass-bg: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-blur: blur(16px);
+  --glass-active: rgba(255, 255, 255, 0.1);
+
+  --card-bg: #141414;
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --card-shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.6);
+
+  --font: 'IBM Plex Mono', monospace;
+
+  --duration: 320ms;
+  --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --duration-slow: 400ms;
+}
+
+[data-theme="light"] {
+  --bg: #f5f5f5;
+  --text: #111111;
+  --text-muted: rgba(0, 0, 0, 0.45);
+  --accent: #4a9e6e;
+
+  --glass-bg: rgba(0, 0, 0, 0.04);
+  --glass-border: rgba(0, 0, 0, 0.08);
+  --glass-active: rgba(0, 0, 0, 0.08);
+
+  --card-bg: #ffffff;
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --card-shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.15);
+}

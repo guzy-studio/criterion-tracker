@@ -1,0 +1,122 @@
+.ai-search {
+  padding: 0 40px 16px;
+}
+
+.ai-search-form {
+  display: flex;
+  gap: 8px;
+}
+
+.ai-search-input {
+  flex: 1;
+  font-family: var(--font);
+  font-size: 0.6875rem;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  background: var(--glass-bg);
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  padding: 10px 12px;
+  outline: none;
+  transition: border-color var(--duration) var(--ease);
+}
+
+.ai-search-input::placeholder {
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.ai-search-input:focus {
+  border-color: var(--accent);
+}
+
+.ai-search-input:disabled {
+  opacity: 0.5;
+}
+
+.ai-search-btn {
+  font-family: var(--font);
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: opacity var(--duration) var(--ease);
+}
+
+.ai-search-btn:hover {
+  opacity: 0.85;
+}
+
+.ai-search-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.ai-search-clear {
+  font-family: var(--font);
+  font-size: 0.5625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 6px;
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: color var(--duration) var(--ease);
+}
+
+.ai-search-clear:hover {
+  color: var(--text);
+}
+
+.ai-search-error {
+  margin-top: 8px;
+  font-size: 0.5625rem;
+  color: var(--accent);
+  letter-spacing: 0.03em;
+}
+
+.ai-search-setup {
+  font-family: var(--font);
+  font-size: 0.5625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  background: var(--glass-bg);
+  border: 1px dashed var(--glass-border);
+  border-radius: 6px;
+  padding: 10px 16px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  transition: color var(--duration) var(--ease), border-color var(--duration) var(--ease);
+}
+
+.ai-search-setup:hover {
+  color: var(--text);
+  border-color: var(--text-muted);
+}
+
+/* AI result reasons */
+
+.ai-reason {
+  font-size: 0.5625rem;
+  color: var(--accent);
+  margin-top: 2px;
+  letter-spacing: 0.02em;
+  font-style: italic;
+  text-transform: none;
+}
+
+@media (max-width: 600px) {
+  .ai-search {
+    padding: 0 20px 12px;
+  }
+}
