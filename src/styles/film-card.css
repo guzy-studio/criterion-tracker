@@ -225,4 +225,20 @@
   .film-card-meta {
     font-size: 0.5rem;
   }
+
+  /* 4-column mobile: poster only, no text */
+  .density-8 .film-card-info {
+    display: none;
+  }
+
+  .density-8 .film-card-image {
+    border-radius: 8px;
+  }
+
+  .density-8 .film-card-watch-btn {
+    width: 24px;
+    height: 24px;
+    bottom: 6px;
+    right: 6px;
+  }
 }
