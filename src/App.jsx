@@ -106,6 +106,7 @@ export default function App() {
 
   const openDetail = useCallback((spine) => {
     setDetailSpine(spine)
+    window.history.pushState({ spine }, '', `/film/${spine}`)
   }, [])
 
   const openNotes = useCallback((spine) => {
@@ -124,6 +125,22 @@ export default function App() {
   const activeFilm = activeNoteSpine != null
     ? films.find((f) => f.spine === activeNoteSpine)
     : null
+
+  // Handle browser back/forward
+  useEffect(() => {
+    const handlePop = () => {
+      const match = window.location.pathname.match(/^\/film\/(\d+)$/)
+      setDetailSpine(match ? Number(match[1]) : null)
+    }
+    window.addEventListener('popstate', handlePop)
+    return () => window.removeEventListener('popstate', handlePop)
+  }, [])
+
+  // Load PDP from URL on initial mount
+  useEffect(() => {
+    const match = window.location.pathname.match(/^\/film\/(\d+)$/)
+    if (match) setDetailSpine(Number(match[1]))
+  }, [])
 
   const detailFilm = detailSpine != null
     ? films.find((f) => f.spine === detailSpine)
@@ -161,7 +178,7 @@ export default function App() {
           isWatched={watched.has(detailSpine)}
           note={notes[detailSpine] || ''}
           onToggle={toggleWatched}
-          onClose={() => setDetailSpine(null)}
+          onClose={() => { setDetailSpine(null); window.history.pushState({}, '', '/') }}
         />
       )}
       {activeFilm && (
