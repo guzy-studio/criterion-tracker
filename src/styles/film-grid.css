@@ -53,7 +53,7 @@
   }
 
   .film-grid.density-8 {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .film-grid.density-1 {

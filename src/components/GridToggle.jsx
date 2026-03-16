@@ -66,10 +66,24 @@ const desktopViews = [
   { value: 8, icon: <Grid8Icon /> },
 ]
 
+const Grid3Icon = () => (
+  <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+    <rect x="0" y="0" width="3.5" height="3.5" />
+    <rect x="5.25" y="0" width="3.5" height="3.5" />
+    <rect x="10.5" y="0" width="3.5" height="3.5" />
+    <rect x="0" y="5.25" width="3.5" height="3.5" />
+    <rect x="5.25" y="5.25" width="3.5" height="3.5" />
+    <rect x="10.5" y="5.25" width="3.5" height="3.5" />
+    <rect x="0" y="10.5" width="3.5" height="3.5" />
+    <rect x="5.25" y="10.5" width="3.5" height="3.5" />
+    <rect x="10.5" y="10.5" width="3.5" height="3.5" />
+  </svg>
+)
+
 const mobileViews = [
   { value: 'list', icon: <ListIcon /> },
   { value: 4, icon: <Grid2Icon /> },
-  { value: 8, icon: <Grid4Icon /> },
+  { value: 8, icon: <Grid3Icon /> },
 ]
 
 function useIsMobile() {
