@@ -242,22 +242,47 @@
   .film-detail-image {
     position: relative;
     height: auto;
-    padding: 80px 40px 40px;
+    padding: 60px 24px 24px;
   }
 
   .film-detail-image img {
     height: auto;
-    max-height: 60vh;
+    max-height: 50vh;
     width: auto;
     max-width: 100%;
+    border-radius: 12px;
   }
 
   .film-detail-info {
-    padding: 0 40px 80px;
+    padding: 0 24px 60px;
+  }
+
+  .film-detail-title {
+    font-size: 1rem;
+    margin-bottom: 24px;
+  }
+
+  .film-detail-meta {
+    margin-bottom: 24px;
+  }
+
+  .film-detail-synopsis,
+  .film-detail-notes,
+  .film-detail-trailer {
+    margin-bottom: 24px;
   }
 
   .film-detail-back {
-    left: 20px;
-    top: 20px;
+    left: 16px;
+    top: 16px;
+  }
+
+  .film-detail-video {
+    max-width: 100%;
+  }
+
+  .film-detail-synopsis p,
+  .film-detail-notes p {
+    max-width: 100%;
   }
 }

@@ -44,19 +44,17 @@
 
 @media (max-width: 600px) {
   .film-grid {
-    padding: 0 20px 20px;
+    padding: 0 16px 20px;
+    gap: 10px;
   }
 
-  .film-grid.density-4 {
+  .film-grid.density-4,
+  .film-grid.density-8 {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .film-grid.density-8 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .film-grid.density-1 {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }

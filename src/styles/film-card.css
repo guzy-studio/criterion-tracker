@@ -199,3 +199,30 @@
 .density-8 .film-card-meta {
   font-size: 0.55rem;
 }
+
+/* Mobile: always show watch button, smaller cards */
+@media (max-width: 600px) {
+  .film-card-watch-btn {
+    opacity: 1;
+    width: 32px;
+    height: 32px;
+    bottom: 8px;
+    right: 8px;
+  }
+
+  .film-card-image {
+    border-radius: 12px;
+  }
+
+  .film-card-info {
+    padding: 6px 2px 4px;
+  }
+
+  .film-card-title {
+    font-size: 0.6rem;
+  }
+
+  .film-card-meta {
+    font-size: 0.5rem;
+  }
+}

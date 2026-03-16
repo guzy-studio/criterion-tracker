@@ -16,7 +16,11 @@
 
 @media (max-width: 600px) {
   .stats-bar {
-    padding: 0 20px 16px;
-    gap: 20px;
+    padding: 0 16px 12px;
+    gap: 16px;
+  }
+
+  .stats-bar span {
+    font-size: 0.5625rem;
   }
 }
