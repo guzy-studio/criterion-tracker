@@ -15,8 +15,8 @@ function setLocal(key, value) {
 export function useUserData(user) {
   const [watched, setWatched] = useState(() => getLocal('watched', []))
   const [notes, setNotes] = useState(() => getLocal('notes', {}))
-  const [density, setDensity] = useState(() => getLocal('density', 4))
-  const [theme, setTheme] = useState(() => getLocal('theme', 'dark'))
+  const [density, setDensity] = useState(() => getLocal('density', 8))
+  const [theme, setTheme] = useState(() => getLocal('theme', 'light'))
   const [loaded, setLoaded] = useState(!user)
   const saveTimer = useRef(null)
 
