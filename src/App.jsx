@@ -11,6 +11,7 @@ import StatsBar from './components/StatsBar'
 import FilmGrid from './components/FilmGrid'
 import FilmDetail from './components/FilmDetail'
 import NotesModal from './components/NotesModal'
+import BackToTop from './components/BackToTop'
 
 function getDecade(year) {
   const d = Math.floor(year / 10) * 10
@@ -196,6 +197,7 @@ export default function App() {
           onClose={() => setShowAuth(false)}
         />
       )}
+      <BackToTop />
     </>
   )
 }
